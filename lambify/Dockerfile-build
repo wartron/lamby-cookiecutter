@@ -17,7 +17,8 @@ RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash - && \
     yum install -y yarn
 
 
-RUN yum install -y postgresql-devel
-
+RUN yum install -y postgresql-devel yarn
+RUN gem install rails bundler
+RUN rails webpacker:install
 
 WORKDIR /var/task
