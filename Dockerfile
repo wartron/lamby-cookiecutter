@@ -8,6 +8,6 @@ RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash - && \
     yum install -y yarn
 
 # For ActiveRecord Tests
-RUN yum install -y sqlite-devel
+RUN yum install -y postgresql-devel
 
 WORKDIR /var/task

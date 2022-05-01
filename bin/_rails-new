@@ -13,10 +13,10 @@ rm -rf "$PROJECT_FOLDER"
 gem install rails -v $VERSION --no-document
 
 rails _"$VERSION"_ new rename_me \
+  --database=postgresql \
   --skip-action-mailer \
   --skip-action-mailbox \
   --skip-action-text \
-  --skip-active-record \
   --skip-active-storage \
   --skip-puma \
   --skip-action-cable \
